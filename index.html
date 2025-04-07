@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campo Minado</title> <!-- Título da aba do navegador -->
+  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos -->
+</head>
+<body>
+  <!-- Container central que organiza todos os elementos -->
+  <div class="container">
+    
+    <!-- Menu superior com botão Start, pontuação e título do jogo -->
+    <div class="menu">
+      <button id="start">Start</button> <!-- Botão para iniciar o jogo -->
+      <span id="score">Score: 0</span> <!-- Pontuação do jogador -->
+      <h1 class="titulo">Campo Minado</h1> <!-- Título visual do jogo -->
+    </div>
+
+    <!-- Área do jogo (canvas onde o jogo é desenhado) -->
+    <canvas id="jogo" width="510" height="510"></canvas>
+
+    <!-- Mensagem de Game Over exibida ao perder -->
+    <div id="gameover">Game Over!</div>
+  </div>
+
+  <!-- Importa o código JavaScript do jogo -->
+  <script src="javascript.js"></script>
+</body>
+</html>
