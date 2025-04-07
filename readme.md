@@ -51,7 +51,7 @@ Canvas API (para desenhar a interface do jogo)
 ![Alt text](Imagem3.png)
 
 
-Este projeto é um trabalho para fins acadêmicos sem quaisquer intenções de uso comercial, ele é baseado no jogo minesweeper da microsof
+Este projeto é um trabalho para fins acadêmicos sem quaisquer intenções de uso comercial, ele é baseado no jogo minesweeper da microsoft
 
 Bibliografia:
 A simplicidade do Campo Minado!! (Animação) https://www.youtube.com/watch?v=A13E7NjQPtg (youtube video)
