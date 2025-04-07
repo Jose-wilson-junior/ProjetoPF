@@ -45,8 +45,6 @@ Canvas API (para desenhar a interface do jogo)
 ![Alt text](imagem2.png)
 ![Alt text](Imagem3.png)
 
-Se desejar, adicione uma imagem de exemplo com uma captura de tela do jogo.
-
 📄 Licença
 
 Este projeto é livre para estudo e modificação. Sinta-se à vontade para usar como base para aprender ou melhorar.
