@@ -1,3 +1,8 @@
+Nome da equipe: Standalone
+
+Equipe: 
+José Wilson dos Santos Junior
+
 Campo Minado 🎮
 
 Este projeto implementa uma versão simplificada do clássico Campo Minado (Minesweeper) usando HTML5, CSS e JavaScript.
@@ -45,6 +50,10 @@ Canvas API (para desenhar a interface do jogo)
 ![Alt text](imagem2.png)
 ![Alt text](Imagem3.png)
 
-📄 Licença
 
-Este projeto é livre para estudo e modificação. Sinta-se à vontade para usar como base para aprender ou melhorar.
+Este projeto é um trabalho para fins acadêmicos sem quaisquer intenções de uso comercial, ele é baseado no jogo minesweeper da microsof
+
+Bibliografia:
+A simplicidade do Campo Minado!! (Animação) https://www.youtube.com/watch?v=A13E7NjQPtg (youtube video)
+Como criar o jogo CAMPO MINADO usando Javascript e HTML - parte 1/2 https://www.youtube.com/watch?v=zaEMcuSPdKc (youtube video)
+Como criar o jogo CAMPO MINADO usando Javascript e HTML - parte 2/2 https://www.youtube.com/watch?v=0zRqRLmBz80 (youtube video)
