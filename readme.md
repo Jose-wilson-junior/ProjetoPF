@@ -13,7 +13,11 @@ Clique no botão Start para iniciar o jogo.
 
 Clique com o botão esquerdo do mouse em qualquer célula para revelá-la.
 
-Evite clicar nas bombas (quadrados vermelhos), ou será Game Over.
+Clique com o botão direito do mouse para colocar ou retirar bandeiras 🚩 do campo minado no campo minado.
+
+Evite clicar nas bombas 💣, ou será Game Over.
+
+Use as bandeiras com sabedoria, só há 10 delas por jogo.
 
 O score é atualizado com base na quantidade de células abertas sem bomba.
 
@@ -31,9 +35,10 @@ O campo é uma grade 10x10.
 
 Existem 10 bombas escondidas aleatoriamente.
 
-Cada célula pode mostrar quantas bombas estão ao seu redor.
+Cada quadrado pode mostrar quantas bombas estão ao seu redor.
 
-Células vazias sem bombas ao redor se abrem automaticamente em cascata.
+Quadrados sem bombas ao redor se abrem automaticamente em cascata.
+
 
 🚀 Tecnologias usadas
 
@@ -51,7 +56,7 @@ Canvas API (para desenhar a interface do jogo)
 ![Alt text](Imagem3.png)
 
 
-Este projeto é um trabalho para fins acadêmicos sem quaisquer intenções de uso comercial, ele é baseado no jogo minesweeper da microsoft
+Este projeto é um trabalho para fins acadêmicos sem quaisquer intenções de uso comercial, ele é baseado no jogo minesweeper da Microsoft.
 
 Bibliografia:
 A simplicidade do Campo Minado!! (Animação) https://www.youtube.com/watch?v=A13E7NjQPtg (youtube video)

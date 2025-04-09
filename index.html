@@ -13,6 +13,7 @@
     <!-- Menu superior com botão Start, pontuação e título do jogo -->
     <div class="menu">
       <button id="start">Start</button> <!-- Botão para iniciar o jogo -->
+      <button id="tutorialBtn">Tutorial</button>
       <span id="score">Score: 0</span> <!-- Pontuação do jogador -->
       <h1 class="titulo">Campo Minado</h1> <!-- Título visual do jogo -->
     </div>
@@ -22,6 +23,22 @@
 
     <!-- Mensagem de Game Over exibida ao perder -->
     <div id="gameover">Game Over!</div>
+    <div id="tutorial" class="overlay">
+      <div class="tutorial-box">
+        <h2>Como Jogar</h2>
+        <ul>
+          <li>Clique no botão Start para iniciar o jogo.</li>
+          <li>Clique com o botão direito do mouse para colocar ou retirar bandeiras 🚩 do campo minado no campo minado</li>
+          <li>Clique com o botão esquerdo do mouse em qualquer quadrado para interagir com o campo minado</li>
+          <li>Evite clicar em quadrados com bomba 💣.</li>
+          <li>Quadrados com números indicam quantas bombas estão ao redor.</li>
+          <li>Limpe todo o campo minado se quiser ganhar</li>
+          <li>Use as bandeiras para sinalizar locais onde você acha que tem bomba</li>
+          <li>há um limite de 10 bandeiras por jogo 🚩</li>
+        </ul>
+        <button id="closeTutorial">Fechar</button>
+      </div>
+    </div>
   </div>
 
   <!-- Importa o código JavaScript do jogo -->
