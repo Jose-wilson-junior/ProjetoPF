@@ -21,6 +21,8 @@ Use as bandeiras com sabedoria, só há 10 delas por jogo.
 
 O score é atualizado com base na quantidade de células abertas sem bomba.
 
+🏁 Se todas as células não-bomba forem abertas, você vence o jogo.
+
 📦 Estrutura dos arquivos
 
 index.html — Estrutura principal do jogo.

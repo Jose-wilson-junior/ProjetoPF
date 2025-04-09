@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Campo Minado</title> <!-- Título da aba do navegador -->
-  <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos -->
+  <title>Campo Minado Funcional</title>
+  <!-- Estilo visual externo -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fonte retrô para título -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+<!-- Áudio de explosão reproduzido ao perder o jogo -->
+<audio id="explosion-sound" src="explosão.mp3" preload="auto"></audio>
 <body>
-  <!-- Container central que organiza todos os elementos -->
+  <!-- Container central do conteúdo -->
   <div class="container">
-    
-    <!-- Menu superior com botão Start, pontuação e título do jogo -->
+
+    <!-- Título estilizado do jogo -->
+    <h1 class="titulo">Campo Minado</h1>
+
+    <!-- Menu de interação com botões e informações -->
     <div class="menu">
-      <button id="start">Start</button> <!-- Botão para iniciar o jogo -->
+      <!-- Botão para iniciar o jogo -->
+      <button id="start">Start</button>
+      <!-- Botão para abrir o tutorial -->
       <button id="tutorialBtn">Tutorial</button>
-      <span id="score">Score: 0</span> <!-- Pontuação do jogador -->
-      <h1 class="titulo">Campo Minado</h1> <!-- Título visual do jogo -->
+      <!-- Espaço onde será exibido o score (pontuação) -->
+      <span id="score">Score: 0</span>
     </div>
 
-    <!-- Área do jogo (canvas onde o jogo é desenhado) -->
+    <!-- Área de desenho do jogo (tabuleiro) -->
     <canvas id="jogo" width="510" height="510"></canvas>
 
-    <!-- Mensagem de Game Over exibida ao perder -->
-    <div id="gameover">Game Over!</div>
+    <!-- Mensagem exibida quando o jogador perde -->
+    <div id="gameover">Game Over</div>
+
+    <!-- Janela de tutorial -->
     <div id="tutorial" class="overlay">
       <div class="tutorial-box">
         <h2>Como Jogar</h2>
         <ul>
-          <li>Clique no botão Start para iniciar o jogo.</li>
-          <li>Clique com o botão direito do mouse para colocar ou retirar bandeiras 🚩 do campo minado no campo minado</li>
-          <li>Clique com o botão esquerdo do mouse em qualquer quadrado para interagir com o campo minado</li>
-          <li>Evite clicar em quadrados com bomba 💣.</li>
-          <li>Quadrados com números indicam quantas bombas estão ao redor.</li>
-          <li>Limpe todo o campo minado se quiser ganhar</li>
-          <li>Use as bandeiras para sinalizar locais onde você acha que tem bomba</li>
-          <li>há um limite de 10 bandeiras por jogo 🚩</li>
+          <li>Clique esquerdo para revelar uma célula.</li>
+          <li>Evite clicar em bombas 💣.</li>
+          <li>Use o clique direito para marcar bandeiras ou retirá-las 🚩 (limite de 10).</li>
+          <li>Os números indicam quantas bombas estão ao redor.</li>
+          <li>🏁 Se todas os quadrados não-bomba forem abertas, você ganha.</li>
         </ul>
+        <!-- Botão para fechar o tutorial -->
         <button id="closeTutorial">Fechar</button>
       </div>
     </div>
+
   </div>
 
-  <!-- Importa o código JavaScript do jogo -->
+  <!-- Script principal da lógica do jogo -->
   <script src="javascript.js"></script>
 </body>
+
 </html>

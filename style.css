@@ -1,4 +1,4 @@
-/* Estilo global da página */
+/* ======== ESTILO GERAL DA PÁGINA ======== */
 body {
   margin: 0;
   padding: 0;
@@ -11,15 +11,16 @@ body {
   overflow: hidden;
 }
 
-/* Container principal */
+/* ======== CONTAINER CENTRAL ======== */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  position: relative; /* Para referência de posicionamento */
 }
 
-/* Menu superior */
+/* ======== MENU DE BOTÕES E INFOS ======== */
 .menu {
   display: flex;
   justify-content: center;
@@ -32,7 +33,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para botões estilizados */
+/* ======== BOTÕES ESTILIZADOS ======== */
 .styled-button {
   padding: 10px 20px;
   font-size: 18px;
@@ -58,7 +59,7 @@ body {
   transform: none;
 }
 
-/* Canvas com borda decorativa */
+/* ======== CANVAS DO JOGO ======== */
 #jogo {
   border: 3px solid #2d3436;
   background-color: #ecf0f1;
@@ -66,38 +67,48 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* Mensagem de Game Over */
+/* ======== MENSAGEM DE DERROTA ======== */
 #gameover {
   display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #e74c3c;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
-  margin-top: 10px;
+  padding: 20px 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  text-align: center;
   animation: fadeIn 0.5s ease-in-out;
+  z-index: 1000; /* Abaixo do tutorial */
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from { opacity: 0; transform: translate(-50%, -50%) scale(0.95); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
 }
 
-/* Título do jogo */
+/* ======== TÍTULO DO JOGO ======== */
 .titulo {
   text-align: center;
   font-family: 'Press Start 2P', cursive;
   font-size: 40px;
   color: #2c3e50;
   text-shadow: 2px 2px 5px #bdc3c7;
+  margin-bottom: 10px;
 }
 
-/* Contador de score e bandeiras */
+/* ======== CONTADORES DE SCORE E BANDEIRAS ======== */
 #score, #flags {
   font-size: 20px;
   font-weight: bold;
   color: #2c3e50;
 }
 
-/* Tutorial Overlay */
+/* ======== TUTORIAL (OVERLAY) ======== */
 .overlay {
   position: fixed;
   top: 0;
@@ -108,7 +119,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000; /* Acima de tudo */
 }
 
 .tutorial-box {
@@ -117,6 +128,8 @@ body {
   border-radius: 20px;
   width: 90%;
   max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto; /* Scroll se necessário */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   text-align: left;
   font-family: Arial, sans-serif;
@@ -124,13 +137,20 @@ body {
 
 .tutorial-box h2 {
   margin-top: 0;
+  color: #2c3e50;
 }
 
 .tutorial-box ul {
   padding-left: 20px;
   margin-bottom: 20px;
+  line-height: 1.6;
 }
 
+.tutorial-box li {
+  margin-bottom: 8px;
+}
+
+/* Botão de fechar tutorial */
 .tutorial-box button {
   padding: 10px 20px;
   background: #5cdb95;
@@ -138,7 +158,8 @@ body {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background 0.3s;
+  font-size: 16px;
 }
 
 .tutorial-box button:hover {
